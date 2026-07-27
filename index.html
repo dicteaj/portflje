@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Porteføljen til Dicte – informatikkstudent, utvikler og kreativ problemløser."
+    />
+    <title>Benedicte – informatikkstudent og utvikler</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header" id="top">
+      <a class="site-logo" href="index.html" aria-label="Dicte – forsiden">
+        Dicte
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        Meny +
+      </button>
+
+      <nav class="main-menu" id="main-menu" aria-label="Hovedmeny">
+        <a href="#prosjekter">Prosjekter</a>
+        <a href="#om">Om meg</a>
+        <a href="CV.html">CV</a>
+        <a href="hobbier.html">Hobbier</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="sticker">Søker jobb fra sommeren 2027!</p>
+          <h1 id="hero-title">Benedicte<br />Jansen.</h1>
+          <p class="hero__intro">
+            Informatikkstudent som liker å være krativ, tenke logisk,
+            – og å lære nyttige egenskaper.
+          </p>
+          <a class="button button--pink" href="#prosjekter">
+            Se prosjekter <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero__visual" aria-label="En liten kodeintroduksjon">
+          <span class="decoration decoration--spark" aria-hidden="true">✦</span>
+          <div class="terminal">
+            <div class="terminal__bar" aria-hidden="true">
+              <span class="dot dot--pink"></span>
+              <span class="dot dot--lime"></span>
+              <span class="dot dot--paper"></span>
+              <strong>&lt;/&gt;</strong>
+            </div>
+            <pre><code><span class="pink">const</span> benedicte <span class="lime">=</span> {
+  student: <span class="lime">'informatikk'</span>,
+  liker: <span class="pink">'å lære'</span>,
+  nysgjerrig: <span class="lime">True</span>
+};</code></pre>
+            <span class="terminal__caret" aria-hidden="true"></span>
+          </div>
+          <span class="decoration decoration--cursor" aria-hidden="true">↖</span>
+          <span class="decoration decoration--star" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="section" id="prosjekter" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="label">Utvalgte prosjekter</p>
+          <h2 id="projects-title">Prosjekter</h2>
+          <p>Ting jeg har laget, tester eller jobber videre med akkurat nå.</p>
+        </div>
+
+        <div class="project-list">
+          
+          <article class="project-card project-card--lime">
+            <div class="project-card__number">01</div>
+            <div class="project-card__content">
+              <p class="eyebrow">Pågående · AI / compliance</p>
+              <h3>AI Compliance Assistant</h3>
+              <p>
+                Et verktøy som gjør kompliserte AI-regler forståelige og
+                omsetter dem til konkrete oppgaver for små bedrifter.
+              </p>
+              <ul class="tags" aria-label="Teknologier">
+                <li>Python</li>
+                <li>LLM</li>
+                <li>Sikkerhet</li>
+              </ul>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="project-card project-card--pink">
+            <div class="project-card__number">02</div>
+            <div class="project-card__content">
+              <p class="eyebrow">Konsept · UX / prototype</p>
+              <h3>TryggRute Tromsø</h3>
+              <p>
+                Et studentkonsept som utforsker hvordan en digital tjeneste kan
+                gjøre det enklere å velge en trygg rute hjem.
+              </p>
+              <ul class="tags" aria-label="Teknologier">
+                <li>UX</li>
+                <li>Prototyping</li>
+                <li>Brukerbehov</li>
+              </ul>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="project-card project-card--paper">
+            <div class="project-card__number">03</div>
+            <div class="project-card__content">
+              <p class="eyebrow">Bygges nå · Web</p>
+              <h3>Whats in your bag?</h3>
+              <p>
+                blablabla blablabla blabla tihio              
+              </p>
+              <ul class="tags" aria-label="Teknologier">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              <a
+                class="project-card__link"
+                href="prosjekter/whats-in-your-bag/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              Se prosjektet <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--paper">
+            <div class="project-card__number">04</div>
+            <div class="project-card__content">
+              <p class="eyebrow">Bygges nå · Web</p>
+              <h3>Denne porteføljen</h3>
+              <p>
+                Et levende prosjekt der jeg utforsker visuell design,
+                tilgjengelighet og interaksjon med moderne webteknologi.
+              </p>
+              <ul class="tags" aria-label="Teknologier">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </article>
+
+
+        </div>
+      </section>
+
+      <section class="section about" id="om" aria-labelledby="about-title">
+        <div>
+          <p class="label label--pink">Litt om meg</p>
+          <h2 id="about-title">Flere fag. En nysgjerrig hjerne.</h2>
+        </div>
+        <div class="about__copy">
+          <p>
+            Jeg studerer for øyeblikket informatikk, og har bakgrunn fra både biovitenskap og
+            medisin. 
+          </p>
+           <a class="text-link" href="CV.html">
+            Se min digitale CV →
+          </a>
+          <p>
+            <br>
+            Når jeg ikke studerer, liker jeg å sy, male og lage ting med
+            hendene. Disse prosjektene har fått sin helt egen plass.
+          </p>
+          <a class="text-link" href="hobbier.html">
+            Besøk hobbyverkstedet →
+          </a>
+        </div>
+      </section>
+
+
+      <section
+        class="section contact"
+        id="kontakt"
+        aria-labelledby="contact-title"
+      >
+        <p class="label label--pink">Kontakt</p>
+        <h2 id="contact-title">Ønsker du å snakke med meg?</h2>
+        <p>Jeg vil gjerne høre.</p>
+
+        <!-- EPOST -->
+        <a class="button button--lime" href="mailto:benedicte.jansen@hotmail.no">
+          Send meg en e-post <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-current-year></span>Dicte ;D</p>
+      <p>Bare for gøy!</p>
+      <a href="#top">Til toppen ↑</a>
+    </footer>
+  </body>
+</html>

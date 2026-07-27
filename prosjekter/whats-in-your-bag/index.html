@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What’s in your bag?</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+  src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
+  defer
+></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"
+  defer
+></script>
+
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="page-heading">
+      <p>Et digitalt stickeralbum</p>
+      <h1>What’s in your bag?</h1>
+    </header>
+
+    <main class="game">
+      <aside class="toolbar">
+        <section>
+          <h2>Bakgrunn</h2>
+          <div class="color-options">
+            <button class="color is-active" data-color="#eee5d1" style="background:#eee5d1"></button>
+            <button class="color" data-color="#b9c6a3" style="background:#b9c6a3"></button>
+            <button class="color" data-color="#aec6cf" style="background:#aec6cf"></button>
+            <button class="color" data-color="#c6a9a3" style="background:#c6a9a3"></button>
+          </div>
+        </section>
+
+        <section class="sticker-section">
+          <h2>Stickers</h2>
+
+          <div class="category-tabs" role="tablist" aria-label="Sticker-kategorier">
+            <button class="category-tab is-active" data-category="bags" role="tab">
+              Bags
+            </button>
+            <button class="category-tab" data-category="essentials" role="tab">
+              Essentials
+            </button>
+            <button class="category-tab" data-category="decoration" role="tab">
+              Decoration
+            </button>
+            <button class="category-tab" data-category="fun" role="tab">
+              Fun
+            </button>
+          </div>
+
+          <div class="sticker-gallery">
+            <!-- Galleriet fylles automatisk fra stickerLibrary i script.js. -->
+          </div>
+        </section>
+
+        <button class="clear-button" type="button">Fjern alle</button>
+
+        <button class="download-button" type="button">
+        Last ned PDF ↓
+        </button>
+      </aside>
+
+      <!-- Stickers som velges, blir plassert inne i denne flaten. -->
+      <section class="canvas" aria-label="Arbeidsflate">
+        <p class="empty-message">Klikk på en sticker for å starte</p>
+        <p class="canvas-help">
+          Dra for å flytte · dra i hjørnet for å skalere · dobbeltklikk for å slette
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

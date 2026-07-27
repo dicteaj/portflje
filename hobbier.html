@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dictes kreative verksted med syprosjekter, hekling, tegning, etc."
+    />
+    <title>Hobbier – Benedicte</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header" id="top">
+      <a class="site-logo" href="index.html" aria-label="Dicte – forsiden">
+        Dicte
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        Meny +
+      </button>
+
+      <nav class="main-menu" id="main-menu" aria-label="Hovedmeny">
+        <a href="index.html#prosjekter">Prosjekter</a>
+        <a href="index.html#om">Om meg</a>
+        <a href="CV.html#om">CV</a>
+        <a href="hobbier.html" aria-current="page">Hobbier</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hobby-hero" aria-labelledby="hobby-title">
+        <div>
+          <p class="sticker">Kreativt verksted</p>
+          <h1 id="hobby-title">Hobbier<span class="pink">.</span></h1>
+        </div>
+        <div class="hobby-hero__intro">
+          <p>
+            Når hodet trenger pause og hendende klør, liker jeg å lage fysiske ting.
+          </p>
+          <p>
+            Her er et lite utvalg av ting jeg har laget de siste årene.
+          </p>
+          <span aria-hidden="true">✂</span>
+        </div>
+        <div class="measuring-tape" aria-hidden="true">
+          <span>1</span><span>2</span><span>3</span><span>4</span>
+          <span>5</span><span>6</span><span>7</span><span>8</span>
+          <span>9</span><span>10</span><span>11</span><span>12</span>
+        </div>
+      </section>
+
+      <section
+        class="section hobby-gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="gallery-heading">
+          <div>
+            <p class="label">Prosjektarkiv</p>
+            <h2 id="gallery-title">Laget av meg</h2>
+          </div>
+        </div>
+
+        <div class="filters" aria-label="Filtrer hobbyprosjekter">
+          <button class="is-active" type="button" data-filter="Alle">
+            Alle
+          </button>
+          <button type="button" data-filter="Søm">Søm</button>
+          <button type="button" data-filter="Kunst">Kunst</button>
+          <button type="button" data-filter="Annet">Annet</button>
+        </div>
+
+        <p class="filter-status" aria-live="polite"></p>
+        <div class="hobby-grid" data-hobby-grid></div>
+      </section>
+
+      <section class="section hobby-contact" aria-labelledby="hobby-contact">
+        <p class="label">Lager du også ting?</p>
+        <h2 id="hobby-contact">Gjerne vis meg!</h2>
+        <div>
+          <a class="button button--pink" href="index.html#kontakt">
+            Ta kontakt <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" href="index.html">← Tilbake til forsiden</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-current-year></span> Dicte ;D </p>
+      <p>Kode, tekstil og alt imellom.</p>
+      <a href="#top">Til toppen ↑</a>
+    </footer>
+  </body>
+</html>
