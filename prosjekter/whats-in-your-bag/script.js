@@ -31,9 +31,6 @@ const stickerLibrary = [
 
   { name: "Sløyfe", category: "decoration", image: "bilder/sløyfe.png" },
   { name: "Hjerter", category: "decoration", image: "bilder/hjerter.png" },
-  { name: "Stjerne", category: "decoration", image: "bilder/" },
-  { name: "Stjerne", category: "decoration", image: "bilder/" },
-  { name: "Stjerne", category: "decoration", image: "bilder/" },
   { name: "Hjerte", category: "decoration", symbol: "♥" },
   { name: "Glitter", category: "decoration", symbol: "✦" },
   { name: "Musikk", category: "decoration", symbol: "♫" },
